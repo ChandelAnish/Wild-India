@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD INDIA</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+
+<!--<div id="menu-bar" class="fas fa-bars"></div>-->
+
+        <a href="#" class="logo"><span></span>WILD INDIA</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#packages">About Us</a>
+            <!--<a href="#Services">Services</a>-->
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="sign-up/signup.html" class="btn-signup">Signup</a>
+            <a href="login/login.html" class="btn-login">Login</a>
+        </div>
+
+<div class="icons">
+    <i class="fas fa-search" id="search-btn"></i>
+    <i class="fas fa-user" id="login-btn"></i>
+
+    
+</div>
+
+<form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search there....">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+
+    </header>
+
+<div class="login-form-container">
+
+<i class="fas fa-time" id="form-close"></i>
+
+
+    <form action="">
+        <div class="form-container" id="form-container">
+            <h2 id="form-title">Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="submit-button" onclick="handleSubmit()">Login</button>
+            <button class="toggle-button" onclick="toggleForm()">Don't have an account? Sign up</button>
+        </div>
+
+    </form>
+</div>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>Discover India's Wildlife</h3>
+        <p>Explore the diverse wildlife in India's sanctuaries and national parks.</p>
+        <div class = "search">
+            <button class = "btn1"  onclick="redirectToSearch()">Search Now!</button>
+        
+        </div>
+
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/145320-786403437_small.mp4"></span>
+<span class="vid-btn" data-src="images/2835528-hd_1920_1080_25fps.mp4"></span>
+<span class="vid-btn " data-src="images/5220276-hd_1920_1080_25fps.mp4"></span>
+<span class="vid-btn" data-src="images/3775802-hd_1920_1080_25fps.mp4"></span>
+
+    </div>
+
+    <div class="video-container">
+<video src="assets/145320-786403437_small.mp4" id="video-slider" loop autoplay muted></video>
+<video src="assets/2835528-hd_1920_1080_25fps.mp4" id="video-slider" loop autoplay muted></video>
+<video src="assets/5220276-hd_1920_1080_25fps.mp4" id="video-slider" loop autoplay muted></video>
+<video src="assets/3775802-hd_1920_1080_25fps.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<section class="book" id="book">
+  
+
+<div class="row">
+<div class="image">
+    <img src="assets/haathi.jpg" alt="">
+</div>
+
+<!--<form action="">
+    <div class="inputBox">
+        <h3>where to</h3>
+        <input type="text" placeholder="place name">
+
+    </div>
+    <div class="inputBox">
+        <h3>how many</h3>
+        <input type="number" placeholder="number of guests">
+
+    </div>
+    <div class="inputBox">
+        <h3>arrivals</h3>
+        <input type="date">
+
+    </div>
+    <div class="inputBox">
+        <h3>leaving</h3>
+        <input type="date">
+
+    </div>
+    <input type="submit" class="btn" value="book now"> 
+</form>-->
+
+</div>
+</section>
+
+<div class = "search">
+    <button class = "btn1"  onclick="redirectToSearch()">Search Now!</button>
+
+</div>
+
+<section class="packages" id="packages">
+
+<h1 class="heading">
+    <span>W</span>
+    <span>I</span>
+    <span>L</span>
+    <span>D</span>
+    <span>L</span>
+    <span>I</span>
+    <span>F</span>
+    <span>E</span>
+</h1>
+
+
+<div class="box-container">
+    <div class="box">
+    <img src="assets/jungle.jpg" alt="">
+<div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>gir national park</h3>
+    <p>Land of last Asiatic Lion!</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+</div>
+
+</div>
+ </div>   
+
+
+ 
+    <div class="box">
+    <img src="assets/jungle2.jpg" alt="">
+<div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>Kaziranga national park</h3>
+    <p>Animals belong in the wild, not behind bars!</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+</div>
+
+</div>
+ </div>   
+
+
+    <div class="box">
+    <img src="assets/jungle4.jpg" alt="">
+<div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>periyar national park</h3>
+    <p>Drive for thrill, don't kill for thrill!</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+</div>
+
+</div>
+ </div>   
+
+ 
+    <div class="box">
+    <img src="assets/jungle5.jpg" alt="">
+<div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>dalma wildlife sanctury</h3>
+    <p>Capture with a camera, not a gun!</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+</div>
+
+</div>
+ </div>   
+
+ <div class="box">
+    <img src="assets/chidya.jpg" alt="">
+<div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>bharatpur bird sanctury</h3>
+    <p>Don't destroy homes you can't build!</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+</div>
+
+ </div>   
+
+ <div class="box">
+    <img src="assets/janwaar.jpg" alt="">
+<div class="content">
+    <h3><i class="fas fa-map-marker-alt"></i>bharatpur bird sanctury</h3>
+    <p>Treat animals the way you want to be treated!</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+</div>
+
+</div>
+ </div>   
+
+</section>
+
+<section class="services" id="services">
+<h1 class="heading">
+    <span>C</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span> 
+    <span>U</span>
+    <span>S</span>
+</h1>
+
+<div class="box-container">
+    <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>Aditi Ratnam Pandey</h3>
+        <p>Phone - 123455678</p>
+        <p>Email - aditi1@wild.com</p>
+    </div>
+
+<div class="box">
+    <i class="fas fa-utensils"></i>
+        <h3>Arpana Sinha</h3>
+        <p>Phone - 123455678</p>
+        <p>Email - arpana1@wild.com</p>
+       
+    </div>
+
+    <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>Ayushi Kumari</h3>
+        <p>Phone - 123455678</p>
+        <p>Email - ayushi1@wild.com</p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Ankit Kumar</h3>
+            <p>Phone - 123455678</p>
+            <p>Email - ankit@wild.com</p>
+            </div>
+           
+            
+           
+                    
+
+</section>
+
+<section class="gallery" id="gallery">
+<h1 class="heading">
+    <span>g</span>
+    <span>a</span>
+    <span>l</span>
+    <span>l</span>
+    <span>e</span>
+    <span>r</span>
+    <span>y</span>
+    
+</h1>
+<div class="box-container">
+    <div class="box">
+        <img src="assets/cheetah.jpg" alt="">
+        <div class="content">
+            <h3>amazing places</h3>
+            <p>what a creation of nature</p>
+            <a href="https://en.m.wikipedia.org/wiki/Cheetah" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="assets/panther.jpg" alt="">
+        <div class="content">
+            <h3>amazing places</h3>
+            <p>what a creation of nature</p>
+            <a href="https://en.m.wikipedia.org/wiki/Black_panther" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="assets/bhaalu.jpg" alt="">
+        <div class="content">
+            <h3>amazing places</h3>
+            <p>what a creation of nature</p>
+            <a href="https://en.wikipedia.org/wiki/Bear" class="btn">see more</a>
+        </div>
+    </div>
+    
+    <div class="box">
+        <img src="assets/gajraj.jpg" alt="">
+        <div class="content">
+            <h3>amazing places</h3>
+            <p>what a creation of nature</p>
+            <a href="https://en.m.wikipedia.org/wiki/Elephant" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="assets/hiran.jpg" alt="">
+        <div class="content">
+            <h3>amazing places</h3>
+            <p>what a creation of nature</p>
+            <a href="https://en.m.wikipedia.org/wiki/Barasingha" class="btn">see more</a>
+        </div>
+    </div>
+    
+
+</div>
+</section>
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        
+        
+    </h1>
+    <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+            <div class="slider">
+                <div class="box">
+                    <img src="assets/mira.jpg" alt="">
+                    <h3>mira singh</h3>
+                    <p>Entrance a few steps ahead..there you have to pay charges to enter 48rs for a single individual and for college students they provide discounts. from the point, it takes around 45-60 mins of walking distance to reach up till Shiv'ji temple. After Entering you will come across many beautiful attractions to
+                        explore small ponds, small lakes, and small waterfalls it's a complete forest tracking, exploring beautiful and overwhelming Greenary of nature, you can find Many Monkeys hanging on trees on your way to temple.It's a complete photography place so you can capture each and every moment on your way.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                      
+                            
+                        </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="box">
+                    <img src="assets/sunny.jpg" alt="">
+                    <h3>sunny sharma</h3>
+                    <p>Entrance a few steps ahead..there you have to pay charges to enter 48rs for a single individual and for college students they provide discounts. from the point, it takes around 45-60 mins of walking distance to reach up till Shiv'ji temple. After Entering you will come across many beautiful attractions to
+                        explore small ponds, small lakes, and small waterfalls it's a complete forest tracking, exploring beautiful and overwhelming Greenary of nature, you can find Many Monkeys hanging on trees on your way to temple.It's a complete photography place so you can capture each and every moment on your way.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                      
+                            
+                        </div>
+                </div>
+            </div>
+
+            
+            <div class="slider">
+                <div class="box">
+                    <img src="assets/honey.png" alt="">
+                    <h3>honey sinha</h3>
+                    <p>Entrance a few steps ahead..there you have to pay charges to enter 48rs for a single individual and for college students they provide discounts. from the point, it takes around 45-60 mins of walking distance to reach up till Shiv'ji temple. After Entering you will come across many beautiful attractions to
+                        explore small ponds, small lakes, and small waterfalls it's a complete forest tracking, exploring beautiful and overwhelming Greenary of nature, you can find Many Monkeys hanging on trees on your way to temple.It's a complete photography place so you can capture each and every moment on your way.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                      
+                            
+                        </div>
+                </div>
+            </div>
+
+            <div class="swiper-slider">
+                <div class="box">
+                    <img src="assets/mitraz.jpg" alt="">
+                    <h3>mitraz</h3>
+                    <p>Entrance a few steps ahead..there you have to pay charges to enter 48rs for a single individual and for college students they provide discounts. from the point, it takes around 45-60 mins of walking distance to reach up till Shiv'ji temple. After Entering you will come across many beautiful attractions to
+                        explore small ponds, small lakes, and small waterfalls it's a complete forest tracking, exploring beautiful and overwhelming Greenary of nature, you can find Many Monkeys hanging on trees on your way to temple.It's a complete photography place so you can capture each and every moment on your way.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                      
+                            
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--<section class="contact">
+    
+    <h1 class="heading">
+        <span>E</span>
+        <span>N</span>
+        <span>Q</span>
+        <span>U</span>
+        <span>I</span>
+        <span>R</span>
+        <span>Y</span>
+        
+    </h1>
+
+<div class="row">
+    <div class="image">
+        <img src="assets/contact.png" alt="">
+    </div>
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" class="btn" value="send message">
+    </form>
+</div>
+
+</section>-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>qwwjjfowejgogjt</p>
+        </div>
+        <div class="box">
+            <h3>locations</h3>
+            <a href="https://forest.rajasthan.gov.in/content/raj/forest/en/resources/forest-statistics/general-introduction1/national-parks-and-sanctuaries-in-rajasthan.html">rajasthan</a>
+            <a href="https://forest.jharkhand.gov.in/en/wings/wildlife">jharkhand</a>
+            <a href="https://forest.kerala.gov.in/index.php/about-us/wildlife/2015-03-16-09-50-24/national-parks">kerala</a>
+            <a href="https://forest.uk.gov.in/wildlife-management">uttarakhand</a>
+            <a href="https://en.m.wikipedia.org/wiki/Category:National_parks_in_Karnataka">karnataka</a>
+            <a href="https://gujaratindia.gov.in/about-gujarat/national-parks.htm">gujarat</a>
+            <a href="https://assam.gov.in/about-us/402">assam</a>
+        </div>
+        <div class="box">
+        <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                    <a href="#">you tube</a>
+                    
+                    </div>
+    </div>
+
+    <h1 class="credit">created by <span> ankit, aditi, arpana and ayushi! </span>all rights reserved!</h1>
+</section>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>  
+</body>
+</html>

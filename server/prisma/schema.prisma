@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model userinfo {
+  username String @id
+  email    String @unique
+  password String
+  phoneno  String
+
+  @@map("userinfo")
+}
+
+model animalsDetails {
+  id                 String @id @default(uuid())
+  specie_name        String
+  sanctuary_name     String
+  sanctuary_location String
+  status             String
+
+  @@map("animalsDetails")
+}

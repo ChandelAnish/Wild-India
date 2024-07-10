@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-image: url("../assets/background.jpg");
+}
+
+h1{
+    color: aliceblue;
+    padding-top: 30px;
+}
+
+#signup{
+    margin: auto;
+    height: max-content;
+    padding-bottom: 10px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#signup input{
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 20px;
+}
+
+::-webkit-input-placeholder{
+    color: aliceblue;
+}
+
+h5{
+    padding-top: 30px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#submit{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 8rem;
+}
+
+.hover{
+    cursor: pointer;
+}
+
+a{
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+
+input-field input::-webkit-inner-spin-button,
+input-field input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.disable{
+    pointer-events: none;
+}
+
+
+
+
+
+/*---------- otp part-----------*/
+
+
+#otp{
+    margin: auto;
+    margin-top: 100px;
+    height: 400px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#otp input{
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    font-size: 1.25rem;
+    outline: none;
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button{
+    display: none;
+}
+
+#otp button{
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: #6e93f7;
+    color: aliceblue;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#otp button:hover{
+    background-color: #0e4bf1;
+    cursor: pointer;
+}
